@@ -508,8 +508,8 @@
 /*---------------------------------------------------------------------*/
 @media only screen and (max-width: 900px) {
     .timeline-cv-eventdesc {
-        min-width: 70%;
-        max-width: 80%;
+        min-width: 75%;
+        max-width: 85%;
 
     }
     .timeline-cv-eventdesc.left {
