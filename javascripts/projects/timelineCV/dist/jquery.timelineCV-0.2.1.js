@@ -138,6 +138,10 @@
             .addClass(_this.config.iconClass[3]).addClass('button-type-change');
         _this.buttonDirectionChange = $('<div/>').addClass(_this.config.timelineButtonsClass)
             .addClass(_this.config.iconClass[2]).addClass('button-direction-change');
+
+        _this.buttonScrollLeft = $('<div/>').addClass(_this.config.timelineButtonsClass).addClass('button-scroll-left').html("<");
+        _this.buttonScrollRight = $('<div/>').addClass(_this.config.timelineButtonsClass).addClass('button-scroll-right').html(">");
+
         /**
          * Describe default events handler
          */
@@ -283,7 +287,7 @@
                 break;
             }
         }
-        _this.container.append(_this.createDescDetailElement(_array));
+        _this.container.append(_this.buttonScrollLeft).append(_this.buttonScrollRight).append(_this.createDescDetailElement(_array));
         //Users event handlers implemented in callbacks as function
         _this.container.trigger('created.timelineCV');
         _this.elementEvents();
@@ -316,6 +320,21 @@
                 _this.config.typeOfTimeline = "default";
                 _this.reload();
             }
+        });
+
+        _this.buttonScrollRight. click(function () {
+            console.log('right');
+            var pos= $('.timeline-cv').scrollLeft() + 500;
+            $('.timeline-cv').stop().animate({
+                scrollLeft:pos
+            }, 50 ,'swing');
+        });
+        _this.buttonScrollLeft. click(function () {
+            console.log('right');
+            var pos= $('.timeline-cv').scrollLeft() - 500;
+            $('.timeline-cv').stop().animate({
+                scrollLeft:pos
+            }, 50 ,'swing');
         });
 
         var descEvent = $('.timeline-cv-eventdesc');
