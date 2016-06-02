@@ -550,10 +550,10 @@
 
     .timeline-cv-eventdesc.left .icon.default{
         left: auto;
-        right: 35px;
+        right: 45px;
     }
     .timeline-cv-eventdesc.right .icon.default{
-        right: 35px;
+        right: 45px;
     }
 
 }
