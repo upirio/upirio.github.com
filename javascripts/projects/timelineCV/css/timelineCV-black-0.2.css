@@ -508,8 +508,8 @@
 /*---------------------------------------------------------------------*/
 @media only screen and (max-width: 900px) {
     .timeline-cv-eventdesc {
-        min-width: 90%;
-        /*max-width: 90%;*/
+        min-width: 70%;
+        max-width: 80%;
 
     }
     .timeline-cv-eventdesc.left {
@@ -567,17 +567,7 @@
     align-items: stretch;
     box-sizing: border-box;
 }
-@media only screen and (max-width: 900px) {
-    .detail-block{
-        flex-wrap: wrap;
-    }
-    .detail-block .edu-section .article{
-        text-align: right;
-    }
-    .detail-block .job-section{
-        border-right: none !important;
-    }
-}
+
 
 .detail-block .job-section{
     /*border-right: 2px dotted #0099b9;*/
@@ -657,4 +647,23 @@ text-align: right;
     border-radius: 4px;
     border: 1px solid #9c27b0;
     transition-duration: 2.0s;
+}
+@media only screen and (max-width: 900px) {
+    .detail-block{
+        flex-wrap: wrap;
+    }
+    .detail-block .edu-section .article{
+        text-align: right;
+    }
+    .detail-block .job-section{
+        border-right: none !important;
+    }
+    .detail-block .article .highlight-item > p{
+        font-size: 0.7em;
+        font-weight: normal;
+    }
+    .detail-block .article .course-item > p{
+        font-size: 0.7em;
+        font-weight: normal;
+    }
 }
