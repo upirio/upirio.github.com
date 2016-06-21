@@ -36,24 +36,23 @@
       </section>
     </div>
 
-    <a class="c-button">
+    <div class="c-button c-button--purple" type="button">
       <div class="c-ripple js-ripple">
-        <div class="c-ripple__circle">
-        </div>
+        <span class="c-ripple__circle"></span>
       </div>
-      ddddddd
-    </a>
+      Material Design Ripple Effect
+    </div>
 
 
     <script src="/javascripts/vendor/jquery-1.12.3.min.js"></script>
     <script>
-      (function($, window, document, undefined) {
+      ;(function($, window, document, undefined) {
 
         'use strict';
 
         var $ripple = $('.js-ripple');
 
-        $ripple.on('click.ui.ripple',function (e) {
+        $ripple.on('click.ui.ripple', function(e) {
 
           var $this = $(this);
           var $offset = $this.parent().offset();
@@ -66,13 +65,15 @@
             top: y + 'px',
             left: x + 'px'
           });
-          $this.addClass('rippleEffect');
+
+          $this.addClass('is-active');
 
         });
 
-        $ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function (e) {
-          $(this).removeClass('rippleEffect');
+        $ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function(e) {
+          $(this).removeClass('is-active');
         });
+
       })(jQuery, window, document);
     </script>
   </body>
