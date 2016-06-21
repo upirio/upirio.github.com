@@ -248,6 +248,18 @@ a {
 }
 
 /*------------------------------------------------------*/
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-tap-highlight-color: #010000;
+}
+
+
 .c-button {
     -webkit-appearance: none;
     position: relative;
