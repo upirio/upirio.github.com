@@ -15,67 +15,32 @@
 
     <header>
       <div class="container">
-        <h1>Sonik9.GitHub.com</h1>
+        <h1>UPIR.ME</h1>
         <h2></h2>
 
-        <section id="downloads">
+        <!--<section id="downloads">
           <a href="https://github.com/sonik9" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
+        </section>-->
       </div>
     </header>
 
     <div class="container">
       <section id="main_content">
-       <h3>Hello everybody!</h3>
+       <!--<h3>Hello everybody!</h3>
         <p>My test projects:</p>
         <ul>
           <li><a href="javascripts/projects/timelineCV/demo/index2.html">TimelineCV</a></li>
           <li><a href="javascripts/projects/calculator/demo/index.html">Calc</a></li>
           <li><a href="javascripts/projects/react-redux/index.html">React-Redux</a></li>
         </ul>
-
+-->
+        <h1>Site under construction.</h1>
       </section>
     </div>
 
-    <button class="c-button c-button--purple" type="button">
-      <div class="c-ripple js-ripple">
-        <span class="c-ripple__circle"></span>
-      </div>
-      Material Design Ripple Effect
-    </button>
 
 
     <script src="/javascripts/vendor/jquery-1.12.3.min.js"></script>
-    <script>
-      ;(function($, window, document, undefined) {
 
-        'use strict';
-
-        var $ripple = $('.js-ripple');
-
-        $ripple.on('click.ui.ripple', function(e) {
-
-          var $this = $(this);
-          var $offset = $this.parent().offset();
-          var $circle = $this.find('.c-ripple__circle');
-
-          var x = e.pageX - $offset.left;
-          var y = e.pageY - $offset.top;
-
-          $circle.css({
-            top: y + 'px',
-            left: x + 'px'
-          });
-
-          $this.addClass('is-active');
-
-        });
-
-        $ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function(e) {
-          $(this).removeClass('is-active');
-        });
-
-      })(jQuery, window, document);
-    </script>
   </body>
 </html>
