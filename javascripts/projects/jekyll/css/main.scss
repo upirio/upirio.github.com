@@ -37,13 +37,10 @@ $on-laptop:        800px;
     @media screen and (max-width: $device) {
         @content;
     }
-}
-
-
+};
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
+@import "../_sass/_base",
+"../_sass/_layout",
+"../_sass/_syntax-highlighting"
 ;
